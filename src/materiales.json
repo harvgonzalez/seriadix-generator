@@ -1,0 +1,28 @@
+{
+    "materials":[
+        {
+            "manufactureDate": "yyyy-mm-dd",
+            "manufactureBatch": "lote de fabricacion",
+            "packagingCode": "Código logistico procesado",
+            "delivery": {
+                "orderNumber": "Número de pedido",
+                "deliveryNote": "Número de albarán",
+                "deliveryDate": "Fecha entrega albarán"
+            },
+            "materialIdentification": {
+                "idiHeader": "Cabecera",
+                "idiLogisticCode": "Código logístico",
+                "IdiSerialNumber": "Numero de serie",
+                "idiManufacturerCode": "Código de Fabricante",
+                "idiSerialNumber": "Número de Serie",
+                "idiManufacturerCode": "Codigo fabricante",
+                "idiReserveedCode": "Posiciones de reserva",
+                "value": "cabecera + cod logístico + fabricante + reserva + num serie"
+            },
+            "materialMassiveRequest": {
+                "id": "id",
+                "isCompleted": "true/false"
+            }
+        }
+    ]
+}
