@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import Formulario from "./components/Formulario";
 import Serie from "./components/Serie";
 import Generador from "./components/Generador";
+import Clipboard from "./components/Clipboard";
 function App() {
 
   // Cambia el estado del generador a true
@@ -61,7 +62,7 @@ function App() {
           />
         </div>
           
-        
+        <Clipboard />
       </div>
     </Fragment>
   );

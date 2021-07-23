@@ -10,23 +10,26 @@ const Generador = ({series}) => {
         materiales.push({
             manufactureDate: element.manufactureDate,
             manufactureBatch: element.manufactureBatch.toString().padStart(20, 0),
-            packagingCode: element.packagingCode,
+            packagingCode: element.packagingCode.toString().padStart(8, 0),
+            logisticCodeUse: {
+                id: element.idiLogisticCode,
+            },
             delivery: {
                 orderNumber: element.orderNumber,
                 deliveryNote: element.deliveryNote,
-                deliveryDate: element.deliveryNote
+                deliveryDate: element.deliveryDate
             },
             materialIdentification: {
                 idiHeader: element.idiHeader,
-                idiLogisticCode: element.idiLogisticCode,
+                idiLogisticCode: element.idiLogisticCode.toString().padStart(8, 0),
                 IdiSerialNumber: i.toString().padStart(16, 0),
                 idiManufacturerCode: element.idiManufacturerCode,
                 idiReservedCode: element.idiReservedCode,
                 value: element.idiHeader + element.idiLogisticCode + element.idiManufacturerCode + element.idiReservedCode + i
             },
             materialMassiveRequest: {
-                id: i,
-                isCompleted: true
+                id: "",
+                isCompleted: false
              }     
             })
         }
@@ -42,7 +45,7 @@ const Generador = ({series}) => {
         <div>
             <form>
                 {
-                    materiales.length <= 0 
+                    series.length <= 0 
                     
                     ?
                     <textarea

@@ -78,7 +78,7 @@ const Formulario = ({crearSerie}) => {
                         type="text"
                         name="manufactureDate"
                         className="u-full-width"
-                        placeholder="yyyy-mm-dd hh:mm:ss"
+                        placeholder="yyyy-mm-ddThh:mm:ssZ"
                         onChange={actualizarState}
                     />
                     <label>Lote</label>
@@ -119,7 +119,7 @@ const Formulario = ({crearSerie}) => {
                         type="text"
                         name="deliveryDate"
                         className="u-full-width"
-                        placeholder="yyyy-mm-dd hh:mm:ss"
+                        placeholder="yyyy-mm-ddThh:mm:ssZ"
                         onChange={actualizarState}
                     />
 
@@ -129,7 +129,7 @@ const Formulario = ({crearSerie}) => {
                         type="text"
                         name="idiHeader"
                         className="u-full-width"
-                        placeholder="32"
+                        placeholder="00"
                         onChange={actualizarState}
                     />         
                     <label>Código logístico</label>
@@ -170,7 +170,7 @@ const Formulario = ({crearSerie}) => {
                         type="text"
                         name="idiReservedCode"
                         className="u-full-width"
-                        placeholder="00"
+                        placeholder="0000"
                         onChange={actualizarState}
                     />
                     <button
