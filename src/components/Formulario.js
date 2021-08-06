@@ -78,7 +78,7 @@ const Formulario = ({crearSerie}) => {
                         type="text"
                         name="manufactureDate"
                         className="u-full-width"
-                        placeholder="yyyy-mm-ddThh:mm:ssZ"
+                        placeholder="yyyy-mm-dd"
                         onChange={actualizarState}
                     />
                     <label>Lote</label>
@@ -119,7 +119,7 @@ const Formulario = ({crearSerie}) => {
                         type="text"
                         name="deliveryDate"
                         className="u-full-width"
-                        placeholder="yyyy-mm-ddThh:mm:ssZ"
+                        placeholder="yyyy-mm-dd"
                         onChange={actualizarState}
                     />
 
