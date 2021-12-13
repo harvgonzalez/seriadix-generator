@@ -22,7 +22,7 @@ const Generador = ({series}) => {
             materialIdentification: {
                 idiHeader: element.idiHeader,
                 idiLogisticCode: element.idiLogisticCode.toString().padStart(8, 0),
-                IdiSerialNumber: i.toString().padStart(16, 0),
+                idiSerialNumber: i.toString().padStart(16, 0),
                 idiManufacturerCode: element.idiManufacturerCode,
                 idiReservedCode: element.idiReservedCode,
                 value: element.idiHeader + element.idiLogisticCode + element.idiManufacturerCode + element.idiReservedCode + i.toString().padStart(16, 0)
