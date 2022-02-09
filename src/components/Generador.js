@@ -12,7 +12,7 @@ const Generador = ({series}) => {
             manufactureBatch: element.manufactureBatch.toString().padStart(20, 0),
             packagingCode: element.packagingCode.toString().padStart(8, 0),
             logisticCodeUse: {
-                id: "00503323",
+                id: "3",
             },
             delivery: {
                 orderNumber: element.orderNumber,
@@ -28,7 +28,7 @@ const Generador = ({series}) => {
                 value: element.idiHeader + element.idiLogisticCode + element.idiManufacturerCode + element.idiReservedCode + i.toString().padStart(16, 0)
             },
             materialMassiveRequest: {
-                id: null,
+                id: "3",
                 isCompleted: "false"
              }     
             })
