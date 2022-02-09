@@ -12,7 +12,7 @@ const Generador = ({series}) => {
             manufactureBatch: element.manufactureBatch.toString().padStart(20, 0),
             packagingCode: element.packagingCode.toString().padStart(8, 0),
             logisticCodeUse: {
-                id: "3",
+                id: "00503323",
             },
             delivery: {
                 orderNumber: element.orderNumber,
