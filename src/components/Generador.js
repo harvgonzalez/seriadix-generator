@@ -28,7 +28,7 @@ const Generador = ({series}) => {
                 value: element.idiHeader + element.idiLogisticCode + element.idiManufacturerCode + element.idiReservedCode + i.toString().padStart(16, 0)
             },
             materialMassiveRequest: {
-                id: "3",
+                id: null,
                 isCompleted: "false"
              }     
             })
