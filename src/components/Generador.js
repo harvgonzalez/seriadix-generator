@@ -29,7 +29,7 @@ const Generador = ({series}) => {
             },
             materialMassiveRequest: {
                 id: null,
-                isCompleted: "true"
+                isCompleted: "false"
              }     
             })
         }
